@@ -1,12 +1,12 @@
 import { useState } from "react";
-import DigitalPiracyHeader from "@/components/DigitalPiracyHeader";
-import DigitalPiracyFooter from "@/components/DigitalPiracyFooter";
-import TabNavigation from "@/components/TabNavigation";
-import HistoryTab from "@/components/HistoryTab";
-import VirusTab from "@/components/VirusTab";
-import ParametersTab from "@/components/ParametersTab";
-import InformationTab from "@/components/InformationTab";
-import { TabType } from "@/lib/tabUtils";
+import DigitalPiracyHeader from "../components/DigitalPiracyHeader";
+import DigitalPiracyFooter from "../components/DigitalPiracyFooter";
+import TabNavigation from "../components/TabNavigation";
+import HistoryTab from "../components/HistoryTab";
+import VirusTab from "../components/VirusTab";
+import ParametersTab from "../components/ParametersTab";
+import InformationTab from "../components/InformationTab";
+import { TabType } from "../lib/tabUtils";
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState<TabType>("historia");

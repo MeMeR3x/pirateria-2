@@ -5,8 +5,6 @@ const HistoryTab: FC = () => {
   return (
     <TabContent
       title="Historia de la Ciberseguridad"
-      imageSrc="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
-      imageAlt="Historia de la ciberseguridad"
     >
       <p className="mb-3">Desde la aparición de los primeros virus en los años 70 hasta los sofisticados ataques actuales, la ciberseguridad ha evolucionado constantemente.</p>
       <p className="mb-3">El primer virus informático, llamado <strong>Creeper</strong>, apareció en 1971. Con el tiempo, los ataques han ido aumentando en complejidad, dando lugar a grandes brechas de seguridad en empresas y gobiernos.</p>
