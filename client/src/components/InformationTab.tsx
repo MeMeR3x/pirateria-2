@@ -5,8 +5,6 @@ const InformationTab: FC = () => {
   return (
     <TabContent
       title="Información Relevante"
-      imageSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
-      imageAlt="Información relevante sobre seguridad informática"
     >
       <p className="mb-4">Últimos datos y noticias sobre ciberseguridad:</p>
       

@@ -5,8 +5,6 @@ const ParametersTab: FC = () => {
   return (
     <TabContent
       title="Protección y Demos"
-      imageSrc="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
-      imageAlt="Protección informática"
     >
       <p className="mb-4">Algunas medidas esenciales para protegerse de ataques informáticos incluyen:</p>
       
