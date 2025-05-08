@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Seguridad Informática</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #1a1a2e;
+      color: #fff;
+    }
+    /* Encabezado */
+    header {
+      background: linear-gradient(90deg, #ff416c, #ff4b2b);
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    /* Menú de navegación */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #16213e;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      background: #ff416c;
+      border-radius: 5px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+    nav a:hover, nav a.active {
+      background: #ff4b2b;
+      transform: scale(1.1);
+    }
+    /* Contenido de pestañas */
+    .content {
+      display: none;
+      padding: 2rem;
+      text-align: center;
+      min-height: 400px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .content.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .content img {
+      max-width: 80%;
+      margin: 1rem 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    }
+    /* Pie de página */
+    footer {
+      background-color: #16213e;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Seguridad Informática: Protección y Prevención</header>
+
+  <nav>
+    <a onclick="showTab('historia')" class="active">Historia</a>
+    <a onclick="showTab('virus')">Virus Comunes</a>
+    <a onclick="showTab('parametros')">Protección y Demos</a>
+    <a onclick="showTab('informacion')">Información Relevante</a>
+  </nav>
+
+  <!-- Contenido de cada pestaña -->
+  <div id="historia" class="content active">
+    <h2>Historia de la Ciberseguridad</h2>
+    <img src="https://via.placeholder.com/500x300" alt="Historia de la ciberseguridad">
+    <p>Desde la aparición de los primeros virus en los años 70 hasta los sofisticados ataques actuales, la ciberseguridad ha evolucionado constantemente.</p>
+    <p>El primer virus informático, llamado *Creeper*, apareció en 1971. Con el tiempo, los ataques han ido aumentando en complejidad, dando lugar a grandes brechas de seguridad en empresas y gobiernos.</p>
+  </div>
+
+  <div id="virus" class="content">
+    <h2>Virus Informáticos Más Comunes</h2>
+    <img src="https://via.placeholder.com/500x300" alt="Virus informáticos">
+    <p>Existen diferentes tipos de malware que afectan a los sistemas:</p>
+    <ul>
+      <li><strong>Virus:</strong> Se adhieren a archivos ejecutables y se propagan.</li>
+      <li><strong>Gusanos:</strong> Se replican sin necesidad de archivos huésped.</li>
+      <li><strong>Troyanos:</strong> Se disfrazan de software legítimo.</li>
+      <li><strong>Ransomware:</strong> Secuestra archivos y pide un rescate.</li>
+      <li><strong>Spyware:</strong> Roba información sin que el usuario lo note.</li>
+    </ul>
+  </div>
+
+  <div id="parametros" class="content">
+    <h2>Protección y Demos</h2>
+    <img src="https://via.placeholder.com/500x300" alt="Protección informática">
+    <p>Algunas medidas esenciales para protegerse de ataques informáticos incluyen:</p>
+    <ol>
+      <li><strong>Antivirus y Anti-malware:</strong> Herramientas que detectan y eliminan amenazas.</li>
+      <li><strong>Firewalls:</strong> Filtran el tráfico entrante y saliente en la red.</li>
+      <li><strong>Autenticación de Dos Factores:</strong> Añade una capa extra de seguridad.</li>
+      <li><strong>Actualizaciones Periódicas:</strong> Mantener el software al día previene vulnerabilidades.</li>
+      <li><strong>Buenas Prácticas:</strong> Evitar correos sospechosos y sitios web no confiables.</li>
+    </ol>
+  </div>
+
+  <div id="informacion" class="content">
+    <h2>Información Relevante</h2>
+    <img src="https://via.placeholder.com/500x300" alt="Información relevante">
+    <p>Últimos datos y noticias sobre ciberseguridad:</p>
+    <ul>
+      <li>⚠ <strong>Aumento del Ransomware:</strong> En 2024, los ataques de ransomware han incrementado un 35%.</li>
+      <li>💻 <strong>Brechas de Seguridad:</strong> Empresas como Microsoft y Google han sido blanco de hackers.</li>
+      <li>🔐 <strong>Nuevas Medidas de Protección:</strong> El uso de inteligencia artificial en ciberseguridad está en auge.</li>
+    </ul>
+  </div>
+
+  <footer>© 2025 - Seguridad Informática | Protección y Prevención</footer>
+
+  <!-- Script para cambiar entre pestañas -->
+  <script>
+    function showTab(tabId) {
+      // Ocultar todas las pestañas
+      document.querySelectorAll('.content').forEach(tab => {
+        tab.classList.remove('active');
+      });
+
+      // Mostrar la pestaña seleccionada
+      document.getElementById(tabId).classList.add('active');
+
+      // Resaltar la pestaña activa en el menú
+      document.querySelectorAll('nav a').forEach(link => {
+        link.classList.remove('active');
+      });
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
