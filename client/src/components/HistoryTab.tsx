@@ -4,24 +4,30 @@ import TabContent from "./TabContent";
 const HistoryTab: FC = () => {
   return (
     <TabContent
-      title="Historia de la Piratería Digital"
+      title="Historia de la Ciberseguridad"
       imageSrc="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
-      imageAlt="Representación simbólica de la piratería digital"
+      imageAlt="Historia de la ciberseguridad"
     >
-      <p className="mb-3">La piratería digital surge con el nacimiento de la tecnología informática, tomando impulso en los años 70 y 80 con las primeras copias no autorizadas de software.</p>
-      <p className="mb-3">En los años 90, con la popularización de Internet, la piratería evolucionó hacia la distribución masiva de software, música y películas a través de BBS (Bulletin Board Systems) y luego mediante servicios P2P como Napster (1999).</p>
-      <p className="mb-3">El siglo XXI vio la transformación de la piratería con BitTorrent (2001), permitiendo compartir archivos de gran tamaño. La era digital trajo consigo The Pirate Bay (2003), uno de los sitios de torrents más famosos, y servicios de streaming ilegal que continúan adaptándose a nuevas tecnologías.</p>
+      <p className="mb-3">Desde la aparición de los primeros virus en los años 70 hasta los sofisticados ataques actuales, la ciberseguridad ha evolucionado constantemente.</p>
+      <p className="mb-3">El primer virus informático, llamado <strong>Creeper</strong>, apareció en 1971. Con el tiempo, los ataques han ido aumentando en complejidad, dando lugar a grandes brechas de seguridad en empresas y gobiernos.</p>
       
       <div className="mt-6 bg-[#16213e] rounded-lg p-4 max-w-3xl mx-auto">
-        <h3 className="text-xl font-bold mb-2">Hitos importantes en la historia de la piratería digital:</h3>
+        <h3 className="text-xl font-bold mb-2">Hitos importantes en la historia de la ciberseguridad:</h3>
         <ul className="list-disc list-inside text-left space-y-2">
-          <li><strong>1975:</strong> Bill Gates escribe carta abierta criticando la copia no autorizada de software.</li>
-          <li><strong>1984:</strong> Se introducen medidas de protección contra copia en disquetes.</li>
-          <li><strong>1998:</strong> Se aprueba la Digital Millennium Copyright Act (DMCA) en EE.UU.</li>
-          <li><strong>2009:</strong> El juicio contra The Pirate Bay marca un precedente legal.</li>
-          <li><strong>2012:</strong> La controversia SOPA/PIPA genera protestas masivas en internet.</li>
-          <li><strong>2020:</strong> El streaming ilegal supera a la descarga directa como forma predominante de piratería.</li>
+          <li><strong>1971:</strong> Creeper, el primer virus informático, aparece en la red ARPANET.</li>
+          <li><strong>1986:</strong> Se documenta el primer gusano informático que afectó a múltiples computadoras.</li>
+          <li><strong>1988:</strong> El gusano Morris se convierte en el primer malware de distribución masiva.</li>
+          <li><strong>1995:</strong> Aparece el primer antivirus comercial ampliamente distribuido.</li>
+          <li><strong>2000:</strong> El gusano ILOVEYOU infecta millones de computadoras en todo el mundo.</li>
+          <li><strong>2010:</strong> Stuxnet demuestra el potencial de los gusanos como armas cibernéticas.</li>
+          <li><strong>2017:</strong> WannaCry, un ransomware con propiedades de gusano, afecta a organizaciones globalmente.</li>
+          <li><strong>2023:</strong> Avances en IA aplicados a la detección y mitigación de gusanos informáticos.</li>
         </ul>
+      </div>
+      
+      <div className="mt-6 p-4 bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] rounded-lg max-w-3xl mx-auto">
+        <h3 className="text-xl font-bold mb-2">Evolución del gusano informático (🐛)</h3>
+        <p>Los gusanos informáticos han evolucionado desde simples programas de autorreplicación hasta sofisticadas amenazas con capacidades de persistencia, ocultación y propagación automatizada. Su capacidad para moverse a través de redes sin intervención humana los convierte en una de las amenazas más peligrosas del panorama actual.</p>
       </div>
     </TabContent>
   );
