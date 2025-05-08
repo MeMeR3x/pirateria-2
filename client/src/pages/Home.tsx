@@ -3,9 +3,9 @@ import DigitalPiracyHeader from "@/components/DigitalPiracyHeader";
 import DigitalPiracyFooter from "@/components/DigitalPiracyFooter";
 import TabNavigation from "@/components/TabNavigation";
 import HistoryTab from "@/components/HistoryTab";
-import TypesTab from "@/components/TypesTab";
-import PreventionTab from "@/components/PreventionTab";
-import StatisticsTab from "@/components/StatisticsTab";
+import VirusTab from "@/components/VirusTab";
+import ParametersTab from "@/components/ParametersTab";
+import InformationTab from "@/components/InformationTab";
 import { TabType } from "@/lib/tabUtils";
 
 const Home = () => {
@@ -17,9 +17,9 @@ const Home = () => {
       <TabNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
       
       {activeTab === "historia" && <HistoryTab />}
-      {activeTab === "tipos" && <TypesTab />}
-      {activeTab === "prevencion" && <PreventionTab />}
-      {activeTab === "estadisticas" && <StatisticsTab />}
+      {activeTab === "virus" && <VirusTab />}
+      {activeTab === "parametros" && <ParametersTab />}
+      {activeTab === "informacion" && <InformationTab />}
       
       <div className="mt-auto">
         <DigitalPiracyFooter />

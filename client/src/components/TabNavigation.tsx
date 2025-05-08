@@ -9,9 +9,9 @@ interface TabNavigationProps {
 const TabNavigation: FC<TabNavigationProps> = ({ activeTab, setActiveTab }) => {
   const tabs: { id: TabType; label: string }[] = [
     { id: "historia", label: "Historia" },
-    { id: "tipos", label: "Tipos de Piratería" },
-    { id: "prevencion", label: "Prevención" },
-    { id: "estadisticas", label: "Estadísticas" }
+    { id: "virus", label: "Virus Comunes" },
+    { id: "parametros", label: "Protección y Demos" },
+    { id: "informacion", label: "Información Relevante" }
   ];
 
   return (
