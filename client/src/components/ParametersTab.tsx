@@ -5,6 +5,9 @@ const ParametersTab: FC = () => {
   return (
     <TabContent
       title="Protección y Demos"
+      imageSrc="https://images.unsplash.com/photo-1614064642639-e398c241c532?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      imageAlt="Representación visual de escudo de protección para la seguridad informática"
+      imageAttribution="FLY:D. (2021). Digital security shield concept [Photograph]. Unsplash. https://unsplash.com/photos/mT7lXZPjk7U"
     >
       <p className="mb-4">Algunas medidas esenciales para protegerse de ataques informáticos incluyen:</p>
       

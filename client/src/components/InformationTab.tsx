@@ -5,6 +5,9 @@ const InformationTab: FC = () => {
   return (
     <TabContent
       title="Información Relevante"
+      imageSrc="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      imageAlt="Representación de datos estadísticos relacionados con la ciberseguridad"
+      imageAttribution="NASA. (2015). Global data visualization [Photograph]. Unsplash. https://unsplash.com/photos/Q1p7bh3SHj8"
     >
       <p className="mb-4">Últimos datos y noticias sobre ciberseguridad:</p>
       

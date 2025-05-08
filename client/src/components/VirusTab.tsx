@@ -5,6 +5,9 @@ const VirusTab: FC = () => {
   return (
     <TabContent
       title="Virus Informáticos Más Comunes"
+      imageSrc="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"
+      imageAlt="Representación de código malicioso con matriz de caracteres verdes sobre fondo negro"
+      imageAttribution="Markus Spiske. (2018). Computer code matrix [Photograph]. Unsplash. https://unsplash.com/photos/iar-afB0QQw"
     >
       <p className="mb-3">Existen diferentes tipos de malware que afectan a los sistemas:</p>
       <ul className="list-disc list-inside text-left space-y-2 max-w-3xl mx-auto mt-4">
